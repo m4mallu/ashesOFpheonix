@@ -1,0 +1,38 @@
+{
+  "name": "pluginsBot",
+  "description": "Telegram's best Open Source ALL-In-One Multi Purpose RoBot. Create your Fork now.",
+  "keywords": ["telegram", "best", "youtube", "downloader", "open", "source", "file", "formatter", "chat", "uploader"],
+  "website": "https://github.com/m4mallu/ashesOFpheonix",
+  "repository": "https://github.com/m4mallu/ashesOFpheonix",
+  "env": {
+        "APP_ID": {"description": "Get this value from https://my.telegram.org", "required": true},
+        "API_HASH": {"description": "Get this value from https://my.telegram.org" , "required": true},
+        "TG_BOT_TOKEN": {"description": "Get Bot Token From BotFather Bot","required": true},
+        "AUTH_USERS": {"description": "List of userIDs separated by <space>","required": true},
+        "PRE_FILE_TXT": {"description": "Text to be used prior to YouTube downloaded file name","required": true},
+        "CHANNEL1_ID": {"description": "Give a channel id to send media prefix: -100","required": true},
+        "CHANNEL1_NAME": {"description": "Give a name to Channel 1","required": true},
+        "CHANNEL2_ID": {"description": "(optional) Give a channel id to send media prefix: -100","required": false},
+        "CHANNEL2_NAME": {"description": "(optional) Give a name to Channel 2","required": false},
+        "CHANNEL3_ID": {"description": "(optional) Give a channel id to send media prefix: -100","required": false},
+        "CHANNEL3_NAME": {"description": "(optional) Give a name to Channel 3","required": false},
+        "CHANNEL4_ID": {"description": "(optional) Give a channel id to send media prefix: -100","required": false},
+        "CHANNEL4_NAME": {"description": "(optional) Give a name to Channel 4","required": false},
+        "CHANNEL5_ID": {"description": "(optional) Give a channel id to send media prefix: -100","required": false},
+        "CHANNEL5_NAME": {"description": "(optional) Give a name to Channel 5","required": false},
+        "ENV": {"description": "Set this to ANYTHING","value": "ANYTHING"}
+  },
+  "addons": [
+  ],
+  "buildpacks": [
+    {"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"},
+    {"url": "heroku/python"}
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "stack": "heroku-20"
+}

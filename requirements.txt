@@ -1,0 +1,10 @@
+#------------------------------------- https://github.com/m4mallu/ashesOFpheonix -------------------------------------#
+wget
+requests
+asyncio
+aiohttp
+hachoir
+Pillow
+TgCrypto
+Pyrogram==1.1.9
+git+https://github.com/ytdl-org/youtube-dl
