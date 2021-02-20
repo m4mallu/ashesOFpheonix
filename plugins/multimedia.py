@@ -193,11 +193,11 @@ async def convert_to_video(bot, update):
             except FloodWait as e:
                 time.sleep(e.x)
             await a.delete()
-            b = await bot.edit_message_text(
+            b = await bot.send_message(
                 chat_id=update.message.chat.id,
-                message_id=a.message_id,
                 text=Translation.AFTER_SUCCESSFUL_UPLOAD_MSG
             )
             time.sleep(5)
             await b.delete()
+            # -- Jumping to Generate Screenshot Function --#
             await generate_screen_shot(bot, update)
