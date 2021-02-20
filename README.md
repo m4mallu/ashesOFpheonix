@@ -96,7 +96,6 @@ python3 bot.py
 
 ```
 start - Check if the Bot is Online
-help  - To understand Bot functions
 send  - send media to the defaul channel
 view  - view the default channel name
 list  - List the channels configured to the bot
