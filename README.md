@@ -7,7 +7,7 @@ An Open Source ALL-In-One Telegram RoBot, that can do a lot of things.
 ## 💠 About :
 An advanced telegram bot which performs the following functions differently.
 
-###1. File Formatting Functions 😍:
+### 1. File Formatting Functions 😍:
 
 😍**Just give a required file name with supported extensions as a Reply to any telegram media will give the following
 results in Bot.  
@@ -20,14 +20,14 @@ These functions can be done in a single download** 😍
 - Making duplicates of downloaded media in a Doc / Video formats.  
 - Trimming streams from the downloaded media.
 
-###2. Downloading YouTube Videos 😍:
+### 2. Downloading YouTube Videos 😍:
 - Downloading YouTube media.
 - taking Screenshots of the downloaded media.
 - Trimming Videos from the downloaded media.
 - Custom Thumbnail support (If available, else use default thumbnail of the videos).
 - Make duplicate copies of the downloaded media in Video / Doc formats.
 
-###3. Copying medias to 5 different Chats 😍:
+### 3. Copying medias to 5 different Chats 😍:
 
 - **For this, bot must be an admin of the required chats(Channels / Groups with privileges)**  
 - **Configuration Variables should be entered properly (Channel Names & IDs)**  
