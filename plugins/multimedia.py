@@ -105,7 +105,6 @@ async def rename_file(bot, update):
                 document=saved_file_path,
                 thumb=thumb_image_path,
                 caption=description,
-                reply_to_message_id=update.message.message_id,
                 progress=progress_for_pyrogram,
                 progress_args=(
                     Translation.UPLOAD_START,
@@ -127,6 +126,7 @@ async def rename_file(bot, update):
 
 #--------------------------------------- Renaming with Updated Text as Video -----------------------------------------#
 async def convert_to_video(bot, update):
+    await bot.delete_messages( chat_id=update.message.chat.id, message_ids=message1[id] )
     thumb_image_path = os.getcwd() + "/" + "thumbnails" + "/" + str(update.from_user.id) + ".jpg"
     if not os.path.exists(thumb_image_path):
         thumb_image_path = None
@@ -144,7 +144,6 @@ async def convert_to_video(bot, update):
     a = await bot.send_message(
         chat_id=update.message.chat.id,
         text=Translation.DOWNLOAD_START,
-        reply_to_message_id=update.message.message_id
     )
     c_time = time.time()
     try:
@@ -184,7 +183,6 @@ async def convert_to_video(bot, update):
                     caption=description,
                     thumb=thumb_image_path,
                     supports_streaming=True,
-                    reply_to_message_id=update.message.message_id,
                     progress=progress_for_pyrogram,
                     progress_args=(
                         Translation.UPLOAD_START,
