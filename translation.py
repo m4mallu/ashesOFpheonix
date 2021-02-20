@@ -62,5 +62,5 @@ class Translation( object ):
                     "}\n\n<b>Channel2:</b>\n<code>ID: {}</code>\nName: {}\n\n<b>Channel 3:</b>\n<code>ID: {" \
                     "}</code>\nName: {}\n\n<b>Channel 4:</b>\n<code>ID: {}</code>\nName: {}\n\n<b>Channel " \
                     "5:</b>\n<code>ID: {}</code>\nName: {} "
-    START_APP_TEXT = "🤓 {} with for Pyrogram v{} (Layer {}) started on {} 🤓"
+    START_APP_TEXT = "🤓 {} with Pyrogram v{} (Layer {}) started on {} 🤓"
     STOP_APP_TEXT = "🥵 Bot stopped. Bye... 🥵"
