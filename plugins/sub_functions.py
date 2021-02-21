@@ -34,7 +34,7 @@ async def save_photo(bot, update):
         a1 = await update.reply_text(text=Translation.SAVED_CUSTOM_THUMB_NAIL, reply_to_message_id=update.message_id)
         time.sleep(5)
         await a1.delete()
-    except IndexError:
+    except Exception:
         pass
 
 
@@ -74,7 +74,7 @@ async def delete_thumbnail(bot, update):
         time.sleep(5)
         await a.delete()
         await bot_settings(bot, update)
-    except IndexError:
+    except Exception:
         pass
 
 
