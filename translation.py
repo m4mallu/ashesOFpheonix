@@ -56,8 +56,6 @@ class Translation( object ):
     NOT_REPLIED_TO_MESSAGE = "⚠️ <b>Attention :</b>\n<code>Replay to any message to send !</code>"
     INFO_CHANNEL = "A'm currently sending messages to:\n<b>{}</b>"
     NO_DEFAULT_SET = "⚠️ <b>Attention :</b>\n<code>No Default channels found! Set a channel first.</code>"
-    INCOMING_MEDIA_TEXT = "<code>Replay to this media with required filename and Extension</code>\nEx: " \
-                          "<b>Terminator.mkv</b> "
     LIST_CHANNELS = "<b>These are my associated chats in use:</b>\n\n<b>Channel 1:</b>\n<code>ID: {}</code>\nName: {" \
                     "}\n\n<b>Channel2:</b>\n<code>ID: {}</code>\nName: {}\n\n<b>Channel 3:</b>\n<code>ID: {" \
                     "}</code>\nName: {}\n\n<b>Channel 4:</b>\n<code>ID: {}</code>\nName: {}\n\n<b>Channel " \
