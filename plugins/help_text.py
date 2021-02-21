@@ -57,19 +57,3 @@ async def start_bot(bot, update):
                 [InlineKeyboardButton("⚙️ Settings", callback_data="settings")]
             ])
     )
-
-@Client.on_message(filters.private & (filters.video | filters.document))
-async def Incoming_media(bot, message):
-    for file_type in ("document", "video"):
-        media = getattr(message, file_type)
-        if media:
-            try:
-                a = await bot.send_message(
-                    chat_id=message.chat.id,
-                    text=Translation.INCOMING_MEDIA_TEXT,
-                    reply_to_message_id=message.message_id
-                )
-                time.sleep(5)
-                await a.delete()
-            except Exception:
-                pass
